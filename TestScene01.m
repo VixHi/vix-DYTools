@@ -7,7 +7,8 @@
 
 #import "TestScene01.h"
 #import "DYPermanentThread.h"
-
+#import "DYProxy.h"
+#import <objc/runtime.h>
 
 @interface DYPerson : NSObject
 
@@ -24,6 +25,7 @@
 @interface TestScene01 ()
 
 @property(nonatomic, strong) DYPermanentThread *thread;
+@property(nonatomic, strong) UIButton *btn;
 
 
 @end
@@ -34,9 +36,27 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = UIColor.whiteColor;
+    NSLog(@"=== %@", _nam);
 
     [self test02];
+    
+    
+    self.btn = UIButton.new;
+    self.btn.frame = CGRectMake(100, 100, 100, 50);
+    [self.btn setTitle:@"点击" forState:UIControlStateNormal];
+    [self.view addSubview:self.btn];
+    self.btn.backgroundColor = UIColor.lightGrayColor;
+    
+    [self.btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
 
+}
+
+
+- (void)btnAction:(UIButton *)sender {
+
+    DYProxy *proxy = [DYProxy proxyWithTarget:objc_getClass("ViewController")];
+    
+//    [proxy setTarget:@selector(abc)];
 }
 
 - (void)test01 {

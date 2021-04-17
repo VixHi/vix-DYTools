@@ -25,14 +25,12 @@
         method_exchangeImplementations(method1, method2);
         
         //
-        
-        
-        
-        
     });
 }
 
 - (void)dy_insertObject:(id)obj atIndex:(NSInteger)index {
+    
+//    objc_setAssociatedObject(<#id  _Nonnull object#>, <#const void * _Nonnull key#>, <#id  _Nullable value#>, <#objc_AssociationPolicy policy#>)
     
     if (obj == nil) {
         NSArray *syms = [NSThread  callStackSymbols];

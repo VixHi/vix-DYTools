@@ -10,8 +10,19 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DYProxy : NSProxy
-+ (instancetype)proxyWithTarget:(id)target;
+//消息转发的target
 @property (weak, nonatomic) id target;
+
++ (instancetype)proxyWithTarget:(id)target;
+
+/**
+ 获取实例对象
+ */
++ (id)proxyToInstance:(NSString *)className;
+/**
+ 获取类对象
+ */
++ (Class)proxyToClass:(NSString *)className;
 
 
 @end

@@ -9,17 +9,18 @@
 #import "DYPermanentThread.h"
 #import "DYProxy.h"
 #import <objc/runtime.h>
+#import "DYPerson.h"
 
-@interface DYPerson : NSObject
-
-@property(nonatomic, strong) NSMutableArray *data;
-
-
-@end
-
-@implementation DYPerson
-@end
-
+//@interface DYPerson : NSObject
+//
+//@property(nonatomic, strong) NSMutableArray *data;
+//
+//
+//@end
+//
+//@implementation DYPerson
+//@end
+//
 
 
 @interface TestScene01 ()
@@ -54,9 +55,8 @@
 
 - (void)btnAction:(UIButton *)sender {
 
-    DYProxy *proxy = [DYProxy proxyWithTarget:objc_getClass("ViewController")];
-    
-//    [proxy setTarget:@selector(abc)];
+    [DYProxy proxyWithTarget:[DYProxy proxyToClass:@"DYPerson"]];
+    [[DYProxy proxyToInstance:@"DYPerson"] performSelector:@selector(callBlock:) withObject:@{@"key1":@"value1"}];
 }
 
 - (void)test01 {

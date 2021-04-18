@@ -31,7 +31,7 @@
 - (void)dy_insertObject:(id)obj atIndex:(NSInteger)index {
     
 //    objc_setAssociatedObject(<#id  _Nonnull object#>, <#const void * _Nonnull key#>, <#id  _Nullable value#>, <#objc_AssociationPolicy policy#>)
-    
+//    ivar
     if (obj == nil) {
         NSArray *syms = [NSThread  callStackSymbols];
         if ([syms count] > 1) {

@@ -59,7 +59,7 @@ typedef void (^BlockTest)(NSString * name);
     
     
     NSMutableArray *array =[NSMutableArray array];
-    array.abc = @"123";
+//    array.abc = @"123";
     
     
     
@@ -113,6 +113,7 @@ typedef void (^BlockTest)(NSString * name);
     TestSceneModel *model = TestSceneModel.new;
     UIViewController *vc = [DYRouter targetViewControllerWithViewModel:model];
     [vc setValue:@"123" forKey:@"nam"];
+    
     
     [self.navigationController pushViewController:vc animated:YES];
 

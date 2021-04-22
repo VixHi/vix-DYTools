@@ -18,6 +18,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
+        
         //NSMutableArray添加nil
         Class cls = NSClassFromString(@"__NSArrayM");
         Method method1 = class_getInstanceMethod(cls, @selector(insertObject:atIndex:));
@@ -30,8 +31,6 @@
 
 - (void)dy_insertObject:(id)obj atIndex:(NSInteger)index {
     
-//    objc_setAssociatedObject(<#id  _Nonnull object#>, <#const void * _Nonnull key#>, <#id  _Nullable value#>, <#objc_AssociationPolicy policy#>)
-//    ivar
     if (obj == nil) {
         NSArray *syms = [NSThread  callStackSymbols];
         if ([syms count] > 1) {

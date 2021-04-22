@@ -41,6 +41,9 @@
 
     [self test02];
     
+//    @autoreleasepool {
+//        
+//    }
     
     self.btn = UIButton.new;
     self.btn.frame = CGRectMake(100, 100, 100, 50);
@@ -74,6 +77,8 @@
     [dic setValue:@"vix" forKey:@"name"];
 
     NSLog(@"%@", dic);
+    
+//    self addObserver:<#(nonnull NSObject *)#> forKeyPath:<#(nonnull NSString *)#> options:<#(NSKeyValueObservingOptions)#> context:<#(nullable void *)#>
 
 }
 

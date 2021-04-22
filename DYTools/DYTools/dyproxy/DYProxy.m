@@ -24,11 +24,9 @@
     return  [self.target methodSignatureForSelector:sel];
 }
 
-
 - (void)forwardInvocation:(NSInvocation *)invocation {
     [invocation invokeWithTarget:self.target];
 }
-
 
 + (id)proxyToInstance:(NSString *)className {
     Class cls = NSClassFromString(className);
@@ -38,7 +36,5 @@
 + (Class)proxyToClass:(NSString *)className {
     return  NSClassFromString(className);
 }
-
-
 
 @end

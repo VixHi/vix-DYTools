@@ -10,10 +10,11 @@
 
 @implementation DYRouter
 
-static NSDictionary *routerMap_;
+NSDictionary *routerMap_;
 
 
 + (void)initialize {
+    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         routerMap_ = [self routerMapping];

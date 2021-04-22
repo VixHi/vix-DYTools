@@ -18,6 +18,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
+        
         //NSMutableArray添加nil
         Class cls = NSClassFromString(@"__NSArrayM");
         Method method1 = class_getInstanceMethod(cls, @selector(insertObject:atIndex:));
@@ -25,10 +26,6 @@
         method_exchangeImplementations(method1, method2);
         
         //
-        
-        
-        
-        
     });
 }
 

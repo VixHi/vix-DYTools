@@ -39,8 +39,6 @@
         }];
 
         [self.thread start];
-        
-        
     }
     return self;
 }

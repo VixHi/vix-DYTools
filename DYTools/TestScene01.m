@@ -7,23 +7,26 @@
 
 #import "TestScene01.h"
 #import "DYPermanentThread.h"
+#import "DYProxy.h"
+#import <objc/runtime.h>
+#import "DYPerson.h"
 
-
-@interface DYPerson : NSObject
-
-@property(nonatomic, strong) NSMutableArray *data;
-
-
-@end
-
-@implementation DYPerson
-@end
-
+//@interface DYPerson : NSObject
+//
+//@property(nonatomic, strong) NSMutableArray *data;
+//
+//
+//@end
+//
+//@implementation DYPerson
+//@end
+//
 
 
 @interface TestScene01 ()
 
 @property(nonatomic, strong) DYPermanentThread *thread;
+@property(nonatomic, strong) UIButton *btn;
 
 
 @end
@@ -34,9 +37,29 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = UIColor.whiteColor;
+    NSLog(@"=== %@", _nam);
 
     [self test02];
+    
+//    @autoreleasepool {
+//        
+//    }
+    
+    self.btn = UIButton.new;
+    self.btn.frame = CGRectMake(100, 100, 100, 50);
+    [self.btn setTitle:@"点击" forState:UIControlStateNormal];
+    [self.view addSubview:self.btn];
+    self.btn.backgroundColor = UIColor.lightGrayColor;
+    
+    [self.btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
 
+}
+
+
+- (void)btnAction:(UIButton *)sender {
+
+    [DYProxy proxyWithTarget:[DYProxy proxyToClass:@"DYPerson"]];
+    [[DYProxy proxyToInstance:@"DYPerson"] performSelector:@selector(callBlock:) withObject:@{@"key1":@"value1"}];
 }
 
 - (void)test01 {
@@ -54,6 +77,8 @@
     [dic setValue:@"vix" forKey:@"name"];
 
     NSLog(@"%@", dic);
+    
+//    self addObserver:<#(nonnull NSObject *)#> forKeyPath:<#(nonnull NSString *)#> options:<#(NSKeyValueObservingOptions)#> context:<#(nullable void *)#>
 
 }
 

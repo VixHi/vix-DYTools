@@ -9,7 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+
 @interface TestScene01 : UIViewController
+
+@property(nonatomic, copy) NSString *nam;
 
 @end
 

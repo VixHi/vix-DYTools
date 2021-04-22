@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B079855262B2D42001AF0AC /* DYProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B079854262B2D42001AF0AC /* DYProxy.m */; };
+		4B07985E262C2F25001AF0AC /* DYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B07985D262C2F25001AF0AC /* DYPerson.m */; };
 		4B563FC3260AD130004819CE /* DYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B563FC2260AD130004819CE /* DYRouter.m */; };
 		4B563FCC260ADA30004819CE /* TestSceneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B563FCB260ADA2F004819CE /* TestSceneModel.m */; };
 		4B563FF9260AE601004819CE /* DYScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B563FF8260AE601004819CE /* DYScheduler.m */; };
@@ -25,6 +27,11 @@
 		4B5F2FA026045652005DAAE6 /* DYPermanentThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F2F9F26045652005DAAE6 /* DYPermanentThread.m */; };
 		4B5F2FF42609C984005DAAE6 /* DYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F2FF32609C984005DAAE6 /* DYTimer.m */; };
 		4B5F30082609E47E005DAAE6 /* DYTableHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F30072609E47E005DAAE6 /* DYTableHelper.m */; };
+		4B64ED4B262E908300D1F27C /* DYViewControllerRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B64ED4A262E908300D1F27C /* DYViewControllerRootView.m */; };
+		4B64ED51262EBC9200D1F27C /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B64ED50262EBC9200D1F27C /* RedView.m */; };
+		4B64ED57262EBCA200D1F27C /* GreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B64ED56262EBCA200D1F27C /* GreenView.m */; };
+		4B64ED61263116B200D1F27C /* DYWeakSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B64ED60263116B200D1F27C /* DYWeakSingleton.m */; };
+		4B88A61026268A1600D189F6 /* UIButton+DYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B88A60F26268A1600D189F6 /* UIButton+DYExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B079853262B2D42001AF0AC /* DYProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYProxy.h; sourceTree = "<group>"; };
+		4B079854262B2D42001AF0AC /* DYProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYProxy.m; sourceTree = "<group>"; };
+		4B07985C262C2F25001AF0AC /* DYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYPerson.h; sourceTree = "<group>"; };
+		4B07985D262C2F25001AF0AC /* DYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPerson.m; sourceTree = "<group>"; };
 		4B563FC1260AD130004819CE /* DYRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYRouter.h; sourceTree = "<group>"; };
 		4B563FC2260AD130004819CE /* DYRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYRouter.m; sourceTree = "<group>"; };
 		4B563FCA260ADA2F004819CE /* TestSceneModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSceneModel.h; sourceTree = "<group>"; };
@@ -81,6 +92,16 @@
 		4B5F2FF32609C984005DAAE6 /* DYTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYTimer.m; sourceTree = "<group>"; };
 		4B5F30062609E47E005DAAE6 /* DYTableHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYTableHelper.h; sourceTree = "<group>"; };
 		4B5F30072609E47E005DAAE6 /* DYTableHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYTableHelper.m; sourceTree = "<group>"; };
+		4B64ED49262E908300D1F27C /* DYViewControllerRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYViewControllerRootView.h; sourceTree = "<group>"; };
+		4B64ED4A262E908300D1F27C /* DYViewControllerRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYViewControllerRootView.m; sourceTree = "<group>"; };
+		4B64ED4F262EBC9200D1F27C /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
+		4B64ED50262EBC9200D1F27C /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
+		4B64ED55262EBCA200D1F27C /* GreenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenView.h; sourceTree = "<group>"; };
+		4B64ED56262EBCA200D1F27C /* GreenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenView.m; sourceTree = "<group>"; };
+		4B64ED5F263116B200D1F27C /* DYWeakSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYWeakSingleton.h; sourceTree = "<group>"; };
+		4B64ED60263116B200D1F27C /* DYWeakSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYWeakSingleton.m; sourceTree = "<group>"; };
+		4B88A60E26268A1600D189F6 /* UIButton+DYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DYExtension.h"; sourceTree = "<group>"; };
+		4B88A60F26268A1600D189F6 /* UIButton+DYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DYExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +129,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B079852262B2D2B001AF0AC /* dyproxy */ = {
+			isa = PBXGroup;
+			children = (
+				4B079853262B2D42001AF0AC /* DYProxy.h */,
+				4B079854262B2D42001AF0AC /* DYProxy.m */,
+			);
+			path = dyproxy;
+			sourceTree = "<group>";
+		};
 		4B563FF6260AE49B004819CE /* dyscheduler */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +177,16 @@
 				4B5F2E252601957C005DAAE6 /* SceneDelegate.m */,
 				4B5F2E272601957C005DAAE6 /* ViewController.h */,
 				4B5F2E282601957C005DAAE6 /* ViewController.m */,
+				4B64ED49262E908300D1F27C /* DYViewControllerRootView.h */,
+				4B64ED4A262E908300D1F27C /* DYViewControllerRootView.m */,
+				4B64ED4F262EBC9200D1F27C /* RedView.h */,
+				4B64ED50262EBC9200D1F27C /* RedView.m */,
+				4B64ED55262EBCA200D1F27C /* GreenView.h */,
+				4B64ED56262EBCA200D1F27C /* GreenView.m */,
 				4B5F2F9126044CF8005DAAE6 /* TestScene01.h */,
 				4B5F2F9226044CF8005DAAE6 /* TestScene01.m */,
+				4B07985C262C2F25001AF0AC /* DYPerson.h */,
+				4B07985D262C2F25001AF0AC /* DYPerson.m */,
 				4B563FCA260ADA2F004819CE /* TestSceneModel.h */,
 				4B563FCB260ADA2F004819CE /* TestSceneModel.m */,
 				4B5F2E2A2601957C005DAAE6 /* Main.storyboard */,
@@ -185,6 +223,8 @@
 				4B5F2F8026043F31005DAAE6 /* NSMutableArray+DYExtension.m */,
 				4B5F2F9726044FEA005DAAE6 /* NSMutableDictionary+DYExtension.h */,
 				4B5F2F9826044FEA005DAAE6 /* NSMutableDictionary+DYExtension.m */,
+				4B88A60E26268A1600D189F6 /* UIButton+DYExtension.h */,
+				4B88A60F26268A1600D189F6 /* UIButton+DYExtension.m */,
 			);
 			path = hooks;
 			sourceTree = "<group>";
@@ -228,6 +268,8 @@
 		4B5F300C2609E4F3005DAAE6 /* DYTools */ = {
 			isa = PBXGroup;
 			children = (
+				4B64ED5E2631164000D1F27C /* weak_singleton */,
+				4B079852262B2D2B001AF0AC /* dyproxy */,
 				4B563FF6260AE49B004819CE /* dyscheduler */,
 				4B5F30022609E33A005DAAE6 /* dyrouter */,
 				4B5F2FFE2609E1A1005DAAE6 /* dytable */,
@@ -236,6 +278,15 @@
 				4B5F2F0026043102005DAAE6 /* hooks */,
 			);
 			path = DYTools;
+			sourceTree = "<group>";
+		};
+		4B64ED5E2631164000D1F27C /* weak_singleton */ = {
+			isa = PBXGroup;
+			children = (
+				4B64ED5F263116B200D1F27C /* DYWeakSingleton.h */,
+				4B64ED60263116B200D1F27C /* DYWeakSingleton.m */,
+			);
+			path = weak_singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,13 +423,20 @@
 				4B5F2FA026045652005DAAE6 /* DYPermanentThread.m in Sources */,
 				4B563FC3260AD130004819CE /* DYRouter.m in Sources */,
 				4B5F2FF42609C984005DAAE6 /* DYTimer.m in Sources */,
+				4B64ED57262EBCA200D1F27C /* GreenView.m in Sources */,
 				4B5F2E232601957C005DAAE6 /* AppDelegate.m in Sources */,
+				4B079855262B2D42001AF0AC /* DYProxy.m in Sources */,
 				4B563FCC260ADA30004819CE /* TestSceneModel.m in Sources */,
+				4B64ED51262EBC9200D1F27C /* RedView.m in Sources */,
 				4B5F2F9326044CF8005DAAE6 /* TestScene01.m in Sources */,
+				4B07985E262C2F25001AF0AC /* DYPerson.m in Sources */,
+				4B64ED61263116B200D1F27C /* DYWeakSingleton.m in Sources */,
+				4B88A61026268A1600D189F6 /* UIButton+DYExtension.m in Sources */,
 				4B5F2E342601957E005DAAE6 /* main.m in Sources */,
 				4B5F30082609E47E005DAAE6 /* DYTableHelper.m in Sources */,
 				4B563FF9260AE601004819CE /* DYScheduler.m in Sources */,
 				4B5F2E262601957C005DAAE6 /* SceneDelegate.m in Sources */,
+				4B64ED4B262E908300D1F27C /* DYViewControllerRootView.m in Sources */,
 				4B5F2F9926044FEA005DAAE6 /* NSMutableDictionary+DYExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
